@@ -3,7 +3,11 @@ import java.util.BitSet;
 
 public class NQueens {
     public static void main(String[] args) {
-        queens(8);
+        int N = 8;
+        if (args.length > 0) {
+            N = Integer.valueOf(args[0]);
+        }
+        queens(N);
     }
 
     static void queens(int N) {
