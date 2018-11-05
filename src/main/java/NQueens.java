@@ -40,7 +40,7 @@ public class NQueens {
 
             // mark queen and line rules
             markQueen(board, nextMarked, row, col);
-//            markLines(board, nextMarked, row, col);
+            markLines(board, nextMarked, row, col);
 
             // move to queen on next row
             queenForRow(board, nextMarked, row + 1);
